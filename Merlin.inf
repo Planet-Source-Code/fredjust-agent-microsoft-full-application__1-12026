@@ -1,0 +1,32 @@
+;
+; inf file for installing the Merlin.acs file
+;
+
+[Version]
+Signature=$Chicago$
+
+[DestinationDirs]
+CharacterCopy = 25,msagent\chars
+
+[DefaultInstall]
+CheckAdminRights = 1
+CopyFiles = CharacterCopy
+
+[DefaultInstall.NT]
+CheckAdminRights = 1
+CopyFiles = CharacterCopy
+
+;
+; Files section for the install
+
+[CharacterCopy]
+Merlin.acs
+
+[SourceDisksNames]
+1 = %DiskName%,Character,0
+
+[SourceDisksFiles]
+Merlin.acs = 1
+
+[Strings] 
+DiskName = "Microsoft Agent Installation Disk for Merlin"
